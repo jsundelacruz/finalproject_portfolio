@@ -1,0 +1,345 @@
+body {
+    margin: 0 0 0 0;
+    font-size: 100%;
+    font-family: sans-serif;
+    min-height: 100% 
+}
+
+a {
+outline: 0;
+text-decoration: none;
+}
+
+/*-------------- Font Face Settings --------------*/
+
+.emoji {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    margin-bottom: -0.25em;
+}   
+/*---------------------- Style for header texts* ---------------- */
+h1{
+    font-size: 2em;
+    font-family: Lato, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #000;
+    margin:0;
+}
+
+h2{
+font-family: Lato, Helvetica, sans-serif;
+line-height: 100%;
+font-size: 2em;
+text-transform: uppercase;
+color: #333;
+}
+
+
+/*--------------ALL SECTIONS--------------*/
+main {
+  height: 100%; }
+  @media (min-width: 400px) and (max-width: 999px) {
+    main {
+      height: auto; 
+    } 
+} 
+
+main section {
+/*    border-top: 7rem solid transparent;*/
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    background-color: #fff;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: table;
+    height: 100%;
+    margin-top: -7rem;
+    min-height: 760px;
+    padding: 10rem 10rem;
+    position: relative;
+    text-align: center;
+    width: 100%; 
+}
+
+main .block {
+    display: table-cell;
+    position: relative;
+    height:200px;
+}
+
+main .block a {
+    color: #2ba6cb;
+    text-decoration: none;
+    line-height: inherit;
+    border-bottom: dotted #666666 2px;
+    -o-transition-property: color;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    transition-property: color;
+    -o-transition-duration: 0.7s;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+main .block a:hover {
+    color: #152428; 
+    background-color: #fff200;
+    text-decoration: overline;
+    border-bottom: none;
+    border-top: #666 solid 1.5px;
+    -o-transition-property: color;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    transition-property: color;
+    -o-transition-duration: 0.7s;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+
+/*---HI---*/
+main section#hi {
+    background-color: rgb(242, 242, 242);
+    border-top: 0;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+    min-height: 800px;
+}
+
+#hi p {
+    padding-top: 100px;
+    float: left;
+}
+
+
+#hi h1 {
+    vertical-align: middle;
+    width:75%;
+    line-height: 150%;
+    text-align: left;
+    font-family: Merriweather;
+    font-size: 2.5em;
+    font-weight: 100;
+}
+
+/*---PORTFOLIO---*/
+main section#portfolio {
+    background: rgb(242, 242, 242);
+    position: relative;
+    z-index: 1;
+}
+
+main section .project {
+    float:left;
+    width:100%;
+    padding: 1.5em 7em;
+}
+
+main section .project img {
+    width: 300px;
+    float: left;
+}
+
+main section .project h1 {
+    float:left;
+    margin: 1em auto 0.5em 1em;
+    clear:right;
+    font-family: Lato;
+    font-weight: 300,
+}
+
+main section .project p {
+    float:left;
+    font-family: Merriweather;
+    font-size: 1em;
+}
+
+
+
+/*---PROFILE---*/
+main section#profile {
+    background: orange;
+    border-top: 0;
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+}
+
+#profile blockquote {
+    font-family: Karla;
+    font-size: 1.75em;
+    font-style: Italic;
+    width: 100%;
+}
+
+/*---CONTACT---*/
+main section#contact {
+    background: rgb(242, 242, 242);
+    position: relative;
+    z-index: 1;
+}
+
+#contact h4{
+    font-family: Merriweather, Helvetica;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+/*--------------NAVBAR--------------*/
+
+.single-page-nav {
+    background: rgba(242,242,242, 0);
+    padding: 1.25em 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+ }
+
+ .single-page-nav .logo {
+
+ }
+
+.single-page-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 75%;
+    float: right;
+    overflow: hidden;
+    font-family: Karla;
+}
+
+.single-page-nav li {
+    float: left;
+/*    width: 24.75%;*/
+    padding-right: 15%;
+    text-align: center;
+}
+
+.single-page-nav a {
+    display: block;
+    color: #8C6F85;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.single-page-nav a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(0,0,0,0.1);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.single-page-nav a:hover, 
+.single-page-nav a:focus {
+    color:#ef6f49;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ef6f49;
+    -webkit-transition:all 0.2s ease-out;
+    -moz-transition:all 0.2s ease-out;
+    -o-transition:all 0.2s ease-out;
+    -ms-transition:all 0.2s ease-out;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+.single-page-nav .current {
+    color:#ef6f49;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ef6f49;
+    -webkit-transition:all 0.2s ease-out;
+    -moz-transition:all 0.2s ease-out;
+    -o-transition:all 0.2s ease-out;
+    -ms-transition:all 0.2s ease-out;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.single-page-nav a.logo::after {
+    display: none;
+}
+
+.block {
+    width: 80%;
+    padding: 0 0;
+    margin: 0 auto;
+    background: #eee;
+}
+
+    /*---RESPONSIVE NAVBAR---*/
+
+    @media all and (max-width : 64em) { /* 1024px */
+    body {
+    font-size: 90%;
+    }
+
+    .single-page-nav a {
+    font-size: 1.375em;
+    }
+
+    .block {
+    width: 90%;
+    }
+
+    #hi h1 {
+    font-size: 1.75em;}
+    }
+
+    @media all and (max-width : 37.5em) { /* 600px */
+
+    .single-page-nav a {
+    font-size: 125%;
+    }
+
+    .single-page-nav ul {
+    width: 95%;
+    }
+
+    .single-page-nav li {
+    width: 50%;
+    padding: 0.5em 0;
+    }
+
+    .block {
+    width: 95%;
+    }
+
+    #hi h1 {
+    font-size: 1em;}
+
+    #cover {
+    padding-top: 7.5em;
+    }
+    }
+
+
+.clearfix {
+    clear:both;
+}
+
+
+
+
