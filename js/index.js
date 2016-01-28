@@ -1,6 +1,3 @@
-
-
-
     $(document).ready(function(){
 
 
@@ -11,7 +8,7 @@
         var justineFacts = new Array();
         justineFacts[0] = "Justine has an affinity for maps and parks.";
         justineFacts[1] = "Justine is traveling to Mexico City in April.";
-        justineFacts[2] = "Justine is currently taking a front-end web development course.";
+        justineFacts[2] = "Justine is always professionally Googling.";
         justineFacts[3] = "Justine will continue spelling 'colour' instead of 'color' while she's in the states.";
         justineFacts[4] = "Justine enjoys matcha-flavoured things, collecting postcards while traveling and traversing the DOM.";
 
@@ -23,7 +20,7 @@
         if ( ! window.console ) console = { log: function(){} };
         // SINGLE PAGE NAV PLUGIN
         $('.single-page-nav').singlePageNav({
-            offset: $('.single-page-nav').outerHeight(),
+            offset: 0,
             filter: ':not(.external)',
             updateHash: true,
             beforeStart: function() {
@@ -57,7 +54,7 @@
               {
                 $('.single-page-nav').data('size','big');
                 $('.single-page-nav').stop().animate({
-                    height:'50px'
+                    height:'80px'
                 },600);
               }  
           }

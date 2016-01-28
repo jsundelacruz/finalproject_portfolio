@@ -41,6 +41,7 @@
             <section id="hi">
                 <div class="block">
                     <h1>Hi, I'm Justine! I live in San Francisco right now working at Fuze as a product designer. I'm also learning front-end web development at General Assembly.</h1>    
+                    Before this, I completed my Bachelor's Industrial Design and worked as a UX Designer on BlackBerry's Foresights team.
                 </div>
             </section>
 
@@ -50,23 +51,26 @@
                         <img src="images/thumbs/translinguax.png">
                         <div class="title">Project 1</div>
                         <div class="description"><p>Freegan microdosing disrupt yr. Stumptown godard hoodie, etsy aesthetic green juice swag biodiesel forage mlkshk 90's post-ironic. Heirloom celiac blog 8-bit hella brunch. Typewriter meh listicle.</p></div>
+                        <button class="open">View project ></button>
                     </div>
                     <div class="project" id="p1">
-                        <img src="images/thumbs/translinguax.png">
+                        <img src="images/thumbs/versx.png">
                         <div class="title">Project 2</div>
                         <div class="description"><p>Freegan microdosing disrupt yr. Stumptown godard hoodie, etsy aesthetic green juice swag biodiesel forage mlkshk 90's post-ironic. Heirloom celiac blog 8-bit hella brunch. Typewriter meh listicle.</p></div>
+                        <button class="open">View project ></button>
                     </div>
                     <div class="project" id="p1">
                         <img src="images/thumbs/translinguax.png">
                         <div class="title">Project 3</div>
                         <div class="description"><p>Freegan microdosing disrupt yr. Stumptown godard hoodie, etsy aesthetic green juice swag biodiesel forage mlkshk 90's post-ironic. Heirloom celiac blog 8-bit hella brunch. Typewriter meh listicle.</p></div>
+                        <button class="open">View project ></button>
                     </div>
                 </div>
             </section>
 
             <section id="profile">
                 <div class="block">
-                    <!-- <h1><blockquote class="justineFact"></blockquote></h1> -->
+                    <h1><blockquote class="justineFact"></blockquote></h1>
                     <p>Learn <a href="/profile.html">more</a> about me or view my <a href="/resume.html">resume</a>.        
                 </div>
             </section>            
@@ -88,6 +92,13 @@
         </main>
 
 
+        <script>
+        $(document).bind('mobileinit',function(){
+            $.mobile.changePage.defaults.changeHash = false;
+            $.mobile.hashListeningEnabled = false;
+            $.mobile.pushStateEnabled = false;
+        });
+        </script> 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="jquery-1.9.1.min.js"><\/script>')</script>
         <script src="js/jquery.singlePageNav.js"></script>
