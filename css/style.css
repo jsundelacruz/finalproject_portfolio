@@ -59,14 +59,12 @@ main section {
     min-height: 760px;
     padding: 10rem 10rem;
     position: relative;
-    text-align: center;
     width: 100%; 
 }
 
 main .block {
     display: table-cell;
     position: relative;
-    height:200px;
 }
 
 main .block a {
@@ -127,7 +125,7 @@ main section#hi {
 
 /*---PORTFOLIO---*/
 main section#portfolio {
-    background: rgb(242, 242, 242);
+    background: pink;
     position: relative;
     z-index: 1;
 }
@@ -135,27 +133,40 @@ main section#portfolio {
 main section .project {
     float:left;
     width:100%;
-    padding: 1.5em 7em;
+    vertical-align: middle;
+    border:2px solid white;
 }
 
 main section .project img {
+    margin: 1.5em;
     width: 300px;
     float: left;
 }
 
-main section .project h1 {
-    float:left;
-    margin: 1em auto 0.5em 1em;
-    clear:right;
-    font-family: Lato;
-    font-weight: 300,
+main section .project > div{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
 }
 
-main section .project p {
+main section .project .title {
+    float:left;
+    margin: 1em auto auto 1em;
+    clear:right;
+    font-size: 2em;
+    font-family: Lato, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #000;
+}
+main section .project .description {
     float:left;
     font-family: Merriweather;
     font-size: 1em;
+    margin: 0.25em auto 0.5em 2em;
+    line-height: 1.75em;
+
 }
+
 
 
 
@@ -180,6 +191,8 @@ main section#contact {
     background: rgb(242, 242, 242);
     position: relative;
     z-index: 1;
+    text-align: center;
+
 }
 
 #contact h4{

@@ -7,10 +7,10 @@
 
 
 
-        // Random Justine facts
+        // Random facts
         var justineFacts = new Array();
         justineFacts[0] = "Justine has an affinity for maps and parks.";
-        justineFacts[1] = "Justine is traveling to South America for the first time this year.";
+        justineFacts[1] = "Justine is traveling to Mexico City in April.";
         justineFacts[2] = "Justine is currently taking a front-end web development course.";
         justineFacts[3] = "Justine will continue spelling 'colour' instead of 'color' while she's in the states.";
         justineFacts[4] = "Justine enjoys matcha-flavoured things, collecting postcards while traveling and traversing the DOM.";
